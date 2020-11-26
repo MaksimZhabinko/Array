@@ -1,6 +1,0 @@
-22:42:06.736 [main] INFO  edu.epam.array.service.ArraySearchService - max : NumberArray{arr=[1, 2, 3, 4, 5, 6, 7, 8, 9]}, result : 9 
-22:42:06.742 [main] INFO  edu.epam.array.service.ArraySearchService - 3 digits numbers found : NumberArray{arr=[123, 121, 555, 666, 678]}, result : [] 
-22:42:06.762 [main] INFO  edu.epam.array.service.ArraySearchService - prime numbers found : NumberArray{arr=[1, 2, 3, 4, 5, 6, 7, 8, 9]}, result : [2, 3, 5, 7] 
-22:42:06.765 [main] INFO  edu.epam.array.service.ArraySearchService - binary search array : NumberArray{arr=[1, 2, 3, 4, 5, 6, 7, 8, 9]}, numberSearch : 6, result : 5 
-22:42:06.769 [main] INFO  edu.epam.array.service.ArraySearchService - fibonacci numbers found : NumberArray{arr=[1, 2, 3, 4, 5, 6, 7, 8, 9]}, result : [1, 2, 3, 5, 8] 
-22:42:06.770 [main] INFO  edu.epam.array.service.ArraySearchService - min : NumberArray{arr=[1, 2, 3, 4, 5, 6, 7, 8, 9]}, result : 1 

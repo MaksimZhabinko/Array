@@ -10,7 +10,7 @@ import java.util.List;
 public class ArraySearchService {
     private static final Logger logger = LogManager.getLogger(ArraySearchService.class);
     private static final int MIN_DIGIT = 100;
-    private static final int MAX_DIGIT = 100;
+    private static final int MAX_DIGIT = 999;
 
     public int binarySearch(NumberArray numberArray, int numberSearch) {
         int low = 0;
