@@ -30,24 +30,31 @@ public class NumberArrayInputReader {
 
     public NumberArray readFile(String path) {
         List<Integer> array = new ArrayList<>();
-       try {
-           BufferedReader reader = new BufferedReader(new FileReader(path));
-           String line = reader.readLine();
-           while (line != null) {
-               String[] numbers = line.split(" ");
-               for (String number : numbers) {
-                   int num = Integer.parseInt(number);
-                   array.add(num);
-               }
-               line = reader.readLine();
-           }
-       } catch (FileNotFoundException ex) {
-           logger.info("file not found");
-       } catch (IOException e) {
-           logger.info("file inout error occurred");
-       }
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(path));
+            String line = reader.readLine();
+            while (line != null) {
+                String[] numbers = line.split(" ");
+                for (String number : numbers) {
+                    int num = Integer.parseInt(number);
+                    array.add(num);
+                }
+                line = reader.readLine();
+            }
+        } catch (FileNotFoundException ex) {
+            logger.info("file not found");
+        } catch (IOException e) {
+            logger.info("file inout error occurred");
+        } finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 
-       int[] result = new int[array.size()];
+        int[] result = new int[array.size()];
         for (int i = 0; i < array.size(); i++) {
             result[i] = array.get(i);
         }
